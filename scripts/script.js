@@ -1,4 +1,9 @@
-
+function setImageSize(){
+  $("img").css({padding: "2px",
+                width: "220px",
+                border: "1px solid black"});
+}
+setImageSize();
 function randomInt(start, end){
   return Math.floor(Math.random() * (end) + start);
 }
