@@ -62,7 +62,7 @@ function checkWin(){
 }
 
 function checkBoardFull(){
-  console.log($("td").length)
+  // console.log($("td").length)
   for (var i = 0; i < getSpots().length; i++) {
     if (getSpots()[i] == ""){
       return false;

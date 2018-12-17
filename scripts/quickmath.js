@@ -6,10 +6,10 @@ $(document).ready(function() {
     if(e.which == 13) {
       if (problems.length > 0){
         if (currentProblem < problems.length){
-          console.log(currentProblem);
-          console.log(problems.length);
+          // console.log(currentProblem);
+          // console.log(problems.length);
           if (checkAnswer(currentProblem)){
-            console.log("correct");
+            // console.log("correct");
             currentProblem++;
             if (currentProblem < problems.length){
               updateProblem();
@@ -81,7 +81,7 @@ function updateProblem(){
 
 function getProblemCount(){
   var problemCount = $("#txtProblemCount").val();
-  console.log(problemCount);
+  // console.log(problemCount);
   if (checkField(problemCount) && problemCount != ""){
     return problemCount;
   } else {
@@ -100,7 +100,7 @@ function createProblemElement(problem){
   }
   var num1 = problem["num1"];
   var num2 = problem["num2"];
-  console.log([num1, num2, operator]);
+  // console.log([num1, num2, operator]);
   // var problemElement = createProblem();
 
   var problemEl = $("<table id=\"problemElement\"></table>");
