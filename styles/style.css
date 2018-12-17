@@ -8,6 +8,12 @@ body {
   background-color: #666;
 }
 
+img {
+  padding: 2px;
+  width: 220px;
+  border: 1px solid black;
+}
+
 #homeDescription {
   padding: 10px;
   text-align: left;
